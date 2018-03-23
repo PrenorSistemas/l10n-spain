@@ -73,6 +73,8 @@ Contributors
 * Pedro M. Baeza <pedro.baeza@tecnativa.com>
 * Oihane Crucelaegui <oihanecrucelaegi@avanzosc.es>
 * Vicent Cubells <vicent@vcubells.net>
+* Javi Melendez <javimelex@gmail.com>
+* Carlos Dauden <carlos.dauden@tecnativa.com>
 
 Financiadores
 -------------

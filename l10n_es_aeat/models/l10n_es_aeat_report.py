@@ -169,6 +169,13 @@ class L10nEsAeatReport(models.AbstractModel):
         help='Company bank account used for the presentation',
         domain="[('acc_type', '=', 'iban'), "
                " ('partner_id', '=', partner_id)]")
+    exception_msg = fields.Char('Exception message',
+                                compute='_compute_exception_msg')
+
+    @api.multi
+    def _compute_exception_msg(self):
+        """To override"""
+
     _sql_constraints = [
         ('name_uniq', 'unique(name, company_id)',
          'AEAT report identifier must be unique'),
@@ -416,3 +423,16 @@ class L10nEsAeatReport(models.AbstractModel):
         if not date:
             return ''
         return datetime.strftime(fields.Date.from_string(date), "%d%m%Y")
+
+    @api.model
+    def get_html(self, given_context=None):
+        """ Render dynamic view from ir.action.client"""
+        result = {}
+        rcontext = {}
+        rec = self.browse(given_context.get('active_id'))
+        if rec:
+            rcontext['o'] = rec
+            result['html'] = self.env.ref(given_context.get(
+                'template_name')).render(
+                rcontext)
+        return result

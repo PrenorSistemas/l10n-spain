@@ -9,7 +9,7 @@
 {
     'name': "AEAT Base",
     'summary': "Modulo base para declaraciones de la AEAT",
-    'version': "10.0.1.0.3",
+    'version': "10.0.1.1.0",
     'author': "Pexego,"
               "Acysos,"
               "AvanzOSC,"
@@ -37,6 +37,7 @@
         'views/aeat_export_configuration_view.xml',
         'views/aeat_tax_code_mapping_view.xml',
         'views/account_move_line_view.xml',
+        'views/report_template.xml',
     ],
     'installable': True,
 }

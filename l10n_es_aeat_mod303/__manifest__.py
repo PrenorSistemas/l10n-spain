@@ -7,13 +7,13 @@
 
 {
     "name": "AEAT modelo 303",
-    "version": "10.0.1.0.0",
+    "version": "10.0.1.5.0",
     'category': "Accounting & Finance",
     'author': "Guadaltech,"
               "AvanzOSC,"
               "Tecnativa,"
               "Odoo Community Association (OCA)",
-    'website': "https://odoo-community.org/",
+    'website': "https://github.com/OCA/l10n-spain",
     "license": "AGPL-3",
     "depends": [
         "l10n_es",
@@ -22,6 +22,8 @@
     "data": [
         "data/tax_code_map_mod303_data.xml",
         "data/aeat_export_mod303_data.xml",
+        "data/aeat_export_mod303_2017_data.xml",
+        "data/aeat_export_mod303_2018_data.xml",
         "views/mod303_view.xml",
         "security/l10n_es_aeat_mod303_security.xml",
         "security/ir.model.access.csv",
