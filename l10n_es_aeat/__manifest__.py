@@ -3,13 +3,13 @@
 # Copyright 2013 Ignacio Ibeas - Acysos S.L. (http://acysos.com)
 # Copyright 2015 Ainara Galdona <agaldona@avanzosc.com>
 # Copyright 2016 Antonio Espinosa <antonio.espinosa@tecnativa.com>
-# Copyright 2013-2018 Pedro M. Baeza <pedro.baeza@tecnativa.com>
+# Copyright 2013-2019 Pedro M. Baeza <pedro.baeza@tecnativa.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl
 
 {
     'name': "AEAT Base",
     'summary': "Modulo base para declaraciones de la AEAT",
-    'version': "10.0.2.0.1",
+    'version': "10.0.2.0.2",
     'author': "Pexego,"
               "Acysos,"
               "AvanzOSC,"
@@ -31,6 +31,7 @@
         'security/ir.model.access.csv',
         'data/aeat_partner.xml',
         'wizard/export_to_boe_wizard.xml',
+        'wizard/compare_boe_file_views.xml',
         'views/aeat_menuitem.xml',
         'views/aeat_report_view.xml',
         'views/aeat_tax_line_view.xml',
